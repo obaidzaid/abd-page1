@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عبد ❤️</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .card img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid red;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: red;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        button {
+            width: 120px;
+            padding: 14px;
+            font-size: 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #yesBtn {
+            background-color: red;
+            color: white;
+            border: 2px solid red;
+        }
+
+        #noBtn {
+            background-color: white;
+            color: red;
+            border: 2px solid red;
+        }
+
+        #message {
+            color: red;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 30px;
+            min-height: 60px;
+        }
+
+        @media (max-width: 500px) {
+            .card img {
+                width: 150px;
+                height: 150px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            button {
+                width: 110px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <img src="abd.jpg.jpeg" alt="Abd">
+
+        <h1>هل بتحب عبد؟ ❤️</h1>
+
+        <div class="buttons">
+            <button id="yesBtn">آه</button>
+            <button id="noBtn">لا</button>
+        </div>
+
+        <div id="message"></div>
+
+    </div>
+
+    <script>
+        const yesBtn = document.getElementById("yesBtn");
+        const noBtn = document.getElementById("noBtn");
+        const message = document.getElementById("message");
+
+        noBtn.addEventListener("click", function () {
+            message.innerText = "إنت موسى 😂";
+        });
+
+        yesBtn.addEventListener("click", function () {
+            message.innerText = "عيد ميلاده كمان 4 أيام، جيبله هدية 🎁😂";
+        });
+    </script>
+
+</body>
+</html>
